@@ -8,6 +8,7 @@ Clone the application with `git clone https://github.com/toniastro/scratchpay.gi
 ### Docker
 
 ```
+cd scratchpay
 docker build -t scratch-challenge .
 docker run -p 9000:9000 -it scratch-challenge`
 ```
