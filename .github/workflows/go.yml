@@ -41,7 +41,7 @@ jobs:
           key: ${{ secrets.SERVERKEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "scratch"
-          target: "sratch-challenge"
+          target: "scratch-challenge"
 
       - name: Deploy and rebuild on server
         uses: appleboy/ssh-action@master
@@ -52,7 +52,7 @@ jobs:
           key: ${{ secrets.SERVERKEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           source: "scratch"
-          target: "sratch-challenge"
+          target: "scratch-challenge"
           script:
             sudo supervisorctl restart scratch &&
             sudo supervisorctl status scratch
