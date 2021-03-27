@@ -26,6 +26,8 @@ To run the application locally, please use the following command -
 
 ### Get All Clinics
 
+I'm assuming if parameters such as clinic Name, State or availability isn't passed; It'd return all clinics.
+
 ```
     URL - *http://localhost:9000/
     Method - GET
