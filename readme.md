@@ -8,6 +8,7 @@ Clone the application with `git clone https://github.com/toniastro/scratchpay.gi
 ### Docker
 
 ```
+cd scratchpay
 docker build -t scratch-challenge .
 docker run -p 9000:9000 -it scratch-challenge`
 ```
@@ -24,6 +25,8 @@ To run the application locally, please use the following command -
 ## Endpoints Description
 
 ### Get All Clinics
+
+I'm assuming if parameters such as clinic Name, State or availability isn't passed; It'd return all clinics.
 
 ```
     URL - *http://localhost:9000/
