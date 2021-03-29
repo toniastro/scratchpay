@@ -73,7 +73,7 @@ func fetchJson() (string, error){
 
 	var wg sync.WaitGroup
 	for _,url := range urls{
-		wg.Add(2)
+		wg.Add(1)
 		go getJson(url, ch, &wg)
 	}
 
